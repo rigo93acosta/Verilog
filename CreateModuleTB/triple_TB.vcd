@@ -1,0 +1,49 @@
+$date
+	Wed Jun 25 22:39:36 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module triple_TB $end
+$var wire 6 ! result [5:0] $end
+$var reg 4 " a [3:0] $end
+$scope module uut $end
+$var wire 4 # a [3:0] $end
+$var wire 6 $ result [5:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b11 !
+b11 $
+b1 "
+b1 #
+#20
+b1001 !
+b1001 $
+b11 "
+b11 #
+#30
+b1111 !
+b1111 $
+b101 "
+b101 #
+#40
+b11110 !
+b11110 $
+b1010 "
+b1010 #
+#65
