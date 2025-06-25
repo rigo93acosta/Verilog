@@ -1,58 +1,58 @@
 #! /usr/bin/vvp
 :ivl_version "12.0 (stable)";
 :ivl_delay_selection "TYPICAL";
-:vpi_time_precision + 0;
+:vpi_time_precision - 12;
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
 :vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
-S_0x55c4de56f8c0 .scope module, "triple_TB" "triple_TB" 2 1;
- .timescale 0 0;
-v0x55c4de595da0_0 .var "a", 3 0;
-v0x55c4de595e60_0 .net "result", 5 0, L_0x55c4de5960a0;  1 drivers
-S_0x55c4de549540 .scope module, "uut" "triple" 2 7, 3 1 0, S_0x55c4de56f8c0;
- .timescale 0 0;
+S_0x56090ddd98c0 .scope module, "triple_TB" "triple_TB" 2 2;
+ .timescale -9 -12;
+v0x56090ddffdc0_0 .var "a", 3 0;
+v0x56090ddffe80_0 .net "result", 5 0, L_0x56090de000c0;  1 drivers
+S_0x56090ddb34c0 .scope module, "uut" "triple" 2 8, 3 1 0, S_0x56090ddd98c0;
+ .timescale -9 -12;
     .port_info 0 /INPUT 4 "a";
     .port_info 1 /OUTPUT 6 "result";
-v0x55c4de549720_0 .net *"_ivl_0", 5 0, L_0x55c4de595f30;  1 drivers
-L_0x7f9081111018 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
-v0x55c4de595990_0 .net *"_ivl_3", 1 0, L_0x7f9081111018;  1 drivers
-L_0x7f9081111060 .functor BUFT 1, C4<000011>, C4<0>, C4<0>, C4<0>;
-v0x55c4de595a70_0 .net/2u *"_ivl_4", 5 0, L_0x7f9081111060;  1 drivers
-v0x55c4de595b30_0 .net "a", 3 0, v0x55c4de595da0_0;  1 drivers
-v0x55c4de595c10_0 .net "result", 5 0, L_0x55c4de5960a0;  alias, 1 drivers
-L_0x55c4de595f30 .concat [ 4 2 0 0], v0x55c4de595da0_0, L_0x7f9081111018;
-L_0x55c4de5960a0 .arith/mult 6, L_0x55c4de595f30, L_0x7f9081111060;
-    .scope S_0x55c4de56f8c0;
+v0x56090ddb36a0_0 .net *"_ivl_0", 5 0, L_0x56090ddfff50;  1 drivers
+L_0x7fe60c53e018 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0x56090ddff9b0_0 .net *"_ivl_3", 1 0, L_0x7fe60c53e018;  1 drivers
+L_0x7fe60c53e060 .functor BUFT 1, C4<000011>, C4<0>, C4<0>, C4<0>;
+v0x56090ddffa90_0 .net/2u *"_ivl_4", 5 0, L_0x7fe60c53e060;  1 drivers
+v0x56090ddffb50_0 .net "a", 3 0, v0x56090ddffdc0_0;  1 drivers
+v0x56090ddffc30_0 .net "result", 5 0, L_0x56090de000c0;  alias, 1 drivers
+L_0x56090ddfff50 .concat [ 4 2 0 0], v0x56090ddffdc0_0, L_0x7fe60c53e018;
+L_0x56090de000c0 .arith/mult 6, L_0x56090ddfff50, L_0x7fe60c53e060;
+    .scope S_0x56090ddd98c0;
 T_0 ;
-    %vpi_call 2 14 "$dumpfile", "triple_TB.vcd" {0 0 0};
-    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55c4de56f8c0 {0 0 0};
-    %vpi_call 2 17 "$monitor", "Input a = %d", v0x55c4de595da0_0 {0 0 0};
+    %vpi_call 2 15 "$dumpfile", "triple_TB.vcd" {0 0 0};
+    %vpi_call 2 16 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56090ddd98c0 {0 0 0};
+    %vpi_call 2 18 "$monitor", "Input a = %d", v0x56090ddffdc0_0 {0 0 0};
     %pushi/vec4 0, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 10, 0;
-    %vpi_call 2 20 "$display", "Result = %d", v0x55c4de595e60_0 {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 21 "$display", "Result = %d", v0x56090ddffe80_0 {0 0 0};
     %pushi/vec4 1, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 10, 0;
-    %vpi_call 2 22 "$display", "Result = %d", v0x55c4de595e60_0 {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 23 "$display", "Result = %d", v0x56090ddffe80_0 {0 0 0};
     %pushi/vec4 3, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 10, 0;
-    %vpi_call 2 24 "$display", "Result = %d", v0x55c4de595e60_0 {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 25 "$display", "Result = %d", v0x56090ddffe80_0 {0 0 0};
     %pushi/vec4 5, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 10, 0;
-    %vpi_call 2 26 "$display", "Result = %d", v0x55c4de595e60_0 {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 27 "$display", "Result = %d", v0x56090ddffe80_0 {0 0 0};
     %pushi/vec4 10, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 10, 0;
-    %vpi_call 2 28 "$display", "Result = %d", v0x55c4de595e60_0 {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 29 "$display", "Result = %d", v0x56090ddffe80_0 {0 0 0};
     %pushi/vec4 10, 0, 4;
-    %store/vec4 v0x55c4de595da0_0, 0, 4;
-    %delay 15, 0;
-    %vpi_call 2 31 "$stop" {0 0 0};
+    %store/vec4 v0x56090ddffdc0_0, 0, 4;
+    %delay 10000, 0;
+    %vpi_call 2 32 "$stop" {0 0 0};
     %end;
     .thread T_0;
 # The file index is used to find the file name in the following table.

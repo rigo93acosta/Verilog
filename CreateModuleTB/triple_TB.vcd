@@ -1,11 +1,11 @@
 $date
-	Wed Jun 25 22:39:36 2025
+	Wed Jun 25 23:04:05 2025
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	1s
+	1ps
 $end
 $scope module triple_TB $end
 $var wire 6 ! result [5:0] $end
@@ -26,24 +26,24 @@ b0 #
 b0 "
 b0 !
 $end
-#10
+#10000
 b11 !
 b11 $
 b1 "
 b1 #
-#20
+#20000
 b1001 !
 b1001 $
 b11 "
 b11 #
-#30
+#30000
 b1111 !
 b1111 $
 b101 "
 b101 #
-#40
+#40000
 b11110 !
 b11110 $
 b1010 "
 b1010 #
-#65
+#60000

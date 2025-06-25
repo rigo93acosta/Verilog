@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module triple_TB ();
 
     reg [3:0] a;
@@ -26,7 +27,7 @@ module triple_TB ();
         $display("Result = %d", result);
         a = 4'd10; #10;
         $display("Result = %d", result);
-        a = 4'd10; #15;
+        a = 4'd10; #10;
         
         $stop; // Stop the simulation
     end
