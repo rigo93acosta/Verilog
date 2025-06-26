@@ -1,0 +1,89 @@
+$date
+	Thu Jun 26 21:30:26 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module operations_TB $end
+$var wire 1 ! S $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ C $end
+$scope module uut $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 $ C $end
+$var wire 1 % w1 $end
+$var wire 1 ! S $end
+$scope module op1 $end
+$var wire 1 " A $end
+$var wire 1 # B $end
+$var wire 1 % S $end
+$var wire 1 & w1 $end
+$upscope $end
+$scope module op2 $end
+$var wire 1 % A $end
+$var wire 1 $ B $end
+$var wire 1 ! S $end
+$var wire 1 ' w1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1'
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#20000
+1!
+1$
+#30000
+0'
+0!
+1%
+0$
+1#
+#40000
+1$
+#50000
+1'
+0%
+0&
+0$
+0#
+1"
+#60000
+1!
+1$
+#70000
+0!
+0$
+1#
+#80000
+1!
+1$
+#100000
+0!
+0'
+1%
+1&
+0"
+#115000
+1!
+1'
+0%
+0&
+1"
+#130000
