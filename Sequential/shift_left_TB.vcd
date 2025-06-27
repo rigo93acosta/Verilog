@@ -1,0 +1,107 @@
+$date
+	Fri Jun 27 03:23:00 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module shift_left_TB $end
+$var wire 8 ! SLData [7:0] $end
+$var reg 8 " PData [7:0] $end
+$var reg 1 # PL $end
+$var reg 1 $ clk $end
+$scope module DUT_sl $end
+$var wire 8 % Din [7:0] $end
+$var wire 1 # PL $end
+$var wire 1 $ clk $end
+$var reg 8 & D [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+bx %
+x$
+1#
+bx "
+bx !
+$end
+#1
+bx0 !
+bx0 &
+b1100101 "
+b1100101 %
+0$
+#2
+b1100101 !
+b1100101 &
+0#
+#5
+1$
+#10
+0$
+#12
+1#
+#15
+1$
+#20
+b11001010 !
+b11001010 &
+0$
+#25
+1$
+#30
+b10010100 !
+b10010100 &
+0$
+#35
+1$
+#40
+b101000 !
+b101000 &
+0$
+#45
+1$
+#50
+b1010000 !
+b1010000 &
+0$
+#55
+1$
+#60
+b10100000 !
+b10100000 &
+0$
+#65
+1$
+#70
+b1000000 !
+b1000000 &
+0$
+#75
+1$
+#80
+b10000000 !
+b10000000 &
+0$
+#85
+1$
+#90
+b0 !
+b0 &
+0$
+#95
+1$
+#100
+0$
+#105
+1$
+#110
+0$
+#112
